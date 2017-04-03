@@ -17,11 +17,11 @@ Route::get('/',function(){
 Route::get('pengguna','PenggunaController@awal');
 Route::get('ruangan/tambah','RuanganController@tambah');
 Route::get('pengguna/tambah','PenggunaController@tambah');
-Route::get('dosen/tambah','DosenController@tambah');
-Route::get('mahasiswa/tambah','MahasiswaController@tambah');
+// Route::get('dosen/tambah','DosenController@tambah');
+// Route::get('mahasiswa/tambah','MahasiswaController@tambah');
 Route::get('matakuliah/tambah','MatakuliahController@tambah');
-Route::get('dosen_matakuliah/tambah','Dosen_matakuliahController@tambah');
-Route::get('jadwal_matakuliah/tambah','Jadwal_matakuliahController@tambah');
+// Route::get('dosen_matakuliah/tambah','Dosen_matakuliahController@tambah');
+// Route::get('jadwal_matakuliah/tambah','Jadwal_matakuliahController@tambah');
 
 
 Route::get('pengguna/lihat/{pengguna}','PenggunaController@lihat');

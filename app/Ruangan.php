@@ -8,4 +8,9 @@ class Ruangan extends Model
 {
     protected $table = 'ruangan';
 	protected $filelable = ['title'];
+	protected $guarded = ['id']
+
+	public function jadwal_matakuliah(){
+    	return $this->hasMany(Jadwal_matakuliah::class,'ruangan_id');
+	}
 }
