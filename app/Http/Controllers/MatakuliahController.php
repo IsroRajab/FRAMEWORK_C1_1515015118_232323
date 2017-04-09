@@ -43,7 +43,7 @@ class MatakuliahController extends Controller
     $informasi = $matakuliah->save() ? 'Berhasil update data':'Gagal update data';
     return redirect ('matakuliah')->with (['informasi'=>$informasi]);
   }
-  public function hapus ($id)
+  public function hapus ($id, Request $input)
   {
     $matakuliah = Matakuliah::find($id);
     $informasi = $matakuliah->delete() ? 'Berhasil hapus data':'Gagal hapus data';
